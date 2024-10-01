@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  background-color: #385b7d;
+  padding: 1rem;
+}
+body header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .navbar a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+body header .navbar a.active {
+  font-weight: bold;
+}
+
+.textinfo {
+  padding: 2rem;
+  background-color: #96cdda;
+}
+.textinfo .info h2 {
+  margin-top: 1rem;
+  color: #007bff;
+}
+.textinfo .cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.textinfo .cards-container .card {
+  width: 18rem;
+  margin: 1rem;
+  border: 1px solid #5c24bd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.textinfo .cards-container .card img {
+  width: 100%;
+}
+.textinfo .cards-container .card .card-body {
+  padding: 2rem;
+}
+.textinfo .cards-container .card .card-body .card-title {
+  margin: 0.5rem 0;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  background-color: #5c24bd;
+}
+.video-container iframe {
+  margin: 1rem;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

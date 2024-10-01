@@ -1,0 +1,90 @@
+@import 'variables';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    header {
+        background-color: $background-color;
+        padding: 1rem;
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                margin: 0 1rem;
+                text-decoration: none;
+                color: $text-light-color;
+
+                &.active {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.textinfo {
+    padding: 2rem;
+    background-color: $three-color;
+    .info {
+        h2 {
+            margin-top: 1rem;
+            color: $primary-color; 
+        }
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+
+        .card {
+            width: 18rem;
+            margin: 1rem;
+            border: 1px solid $border-color;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            .card-body {
+                padding: 1rem;
+
+                .card-title {
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    background-color: $border-color;
+
+    iframe {
+        margin: 1rem;
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+    }
+}
+
+footer {
+    background-color: $text-dark-color;
+    color: $text-light-color;
+    text-align: center;
+    padding: 2rem 0;
+}
